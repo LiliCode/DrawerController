@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ICSDrawerController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ICSDrawerControllerChild,ICSDrawerControllerPresenting>
 
 
 @end

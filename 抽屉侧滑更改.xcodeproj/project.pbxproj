@@ -16,6 +16,9 @@
 		028C3FBC1CEEFDCB00CA4804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028C3FBA1CEEFDCB00CA4804 /* LaunchScreen.storyboard */; };
 		028C3FC71CEEFDCB00CA4804 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FC61CEEFDCB00CA4804 /* ______Tests.m */; };
 		028C3FD21CEEFDCB00CA4804 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FD11CEEFDCB00CA4804 /* ______UITests.m */; };
+		028C3FE41CEF039A00CA4804 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */; };
+		028C3FE51CEF039A00CA4804 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */; };
+		028C3FE81CEFF33900CA4804 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE71CEFF33900CA4804 /* MenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		028C3FCD1CEEFDCB00CA4804 /* 抽屉侧滑更改UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "抽屉侧滑更改UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		028C3FD11CEEFDCB00CA4804 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		028C3FD31CEEFDCB00CA4804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028C3FE01CEF039A00CA4804 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
+		028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
+		028C3FE21CEF039A00CA4804 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		028C3FE61CEFF33900CA4804 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		028C3FE71CEFF33900CA4804 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		028C3FE91CEFF3CC00CA4804 /* ProjectPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectPCH.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +113,20 @@
 		028C3FA81CEEFDCB00CA4804 /* 抽屉侧滑更改 */ = {
 			isa = PBXGroup;
 			children = (
+				028C3FDF1CEF025200CA4804 /* Drawer */,
 				028C3FAC1CEEFDCB00CA4804 /* AppDelegate.h */,
 				028C3FAD1CEEFDCB00CA4804 /* AppDelegate.m */,
 				028C3FAF1CEEFDCB00CA4804 /* ViewController.h */,
 				028C3FB01CEEFDCB00CA4804 /* ViewController.m */,
+				028C3FE61CEFF33900CA4804 /* MenuTableViewController.h */,
+				028C3FE71CEFF33900CA4804 /* MenuTableViewController.m */,
 				028C3FB21CEEFDCB00CA4804 /* Main.storyboard */,
 				028C3FB81CEEFDCB00CA4804 /* Assets.xcassets */,
 				028C3FBA1CEEFDCB00CA4804 /* LaunchScreen.storyboard */,
 				028C3FBD1CEEFDCB00CA4804 /* Info.plist */,
 				028C3FB51CEEFDCB00CA4804 /* ______.xcdatamodeld */,
 				028C3FA91CEEFDCB00CA4804 /* Supporting Files */,
+				028C3FE91CEFF3CC00CA4804 /* ProjectPCH.pch */,
 			);
 			path = "抽屉侧滑更改";
 			sourceTree = "<group>";
@@ -141,6 +155,17 @@
 				028C3FD31CEEFDCB00CA4804 /* Info.plist */,
 			);
 			path = "抽屉侧滑更改UITests";
+			sourceTree = "<group>";
+		};
+		028C3FDF1CEF025200CA4804 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				028C3FE01CEF039A00CA4804 /* ICSDrawerController.h */,
+				028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */,
+				028C3FE21CEF039A00CA4804 /* ICSDropShadowView.h */,
+				028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */,
+			);
+			name = Drawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +235,7 @@
 				TargetAttributes = {
 					028C3FA51CEEFDCB00CA4804 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = A9PUFY7TNW;
+						DevelopmentTeam = 6S88C5NHSC;
 					};
 					028C3FC11CEEFDCB00CA4804 = {
 						CreatedOnToolsVersion = 7.3;
@@ -279,6 +304,9 @@
 				028C3FB11CEEFDCB00CA4804 /* ViewController.m in Sources */,
 				028C3FB71CEEFDCB00CA4804 /* ______.xcdatamodeld in Sources */,
 				028C3FAE1CEEFDCB00CA4804 /* AppDelegate.m in Sources */,
+				028C3FE51CEF039A00CA4804 /* ICSDropShadowView.m in Sources */,
+				028C3FE41CEF039A00CA4804 /* ICSDrawerController.m in Sources */,
+				028C3FE81CEFF33900CA4804 /* MenuTableViewController.m in Sources */,
 				028C3FAB1CEEFDCB00CA4804 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +448,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/抽屉侧滑更改/ProjectPCH.pch";
 				INFOPLIST_FILE = "抽屉侧滑更改/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quanquaner.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,7 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/抽屉侧滑更改/ProjectPCH.pch";
 				INFOPLIST_FILE = "抽屉侧滑更改/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "quanquaner.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";

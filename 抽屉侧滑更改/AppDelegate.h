@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "ICSDrawerController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong , nonatomic) ICSDrawerController *drawer;
 
 @property (strong, nonatomic) UIWindow *window;
 

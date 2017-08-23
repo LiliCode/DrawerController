@@ -7,19 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
+@property (strong , nonatomic) AppDelegate *appDelegate;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.appDelegate = [UIApplication sharedApplication].delegate;
 }
 
-- (void)didReceiveMemoryWarning {
+- (IBAction)open_left:(UIBarButtonItem *)sender
+{
+    [self.appDelegate.drawer performDrawer];
+}
+
+
+- (IBAction)open_right:(UIBarButtonItem *)sender
+{
+    [self.appDelegate.drawer performDrawer];
+}
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
