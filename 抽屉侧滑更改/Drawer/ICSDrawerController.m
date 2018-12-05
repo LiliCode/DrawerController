@@ -228,7 +228,7 @@ typedef NS_ENUM(NSUInteger, ICSDrawerControllerState)
     UIGestureRecognizerState state = panGestureRecognizer.state;        //滑动状态
     CGPoint location = [panGestureRecognizer locationInView:self.view]; //滑动位置
     CGPoint velocity = [panGestureRecognizer velocityInView:self.view]; //滑动速度
-    CGSize size = [UIScreen mainScreen].bounds.size;    //屏幕尺寸
+//    CGSize size = [UIScreen mainScreen].bounds.size;    //屏幕尺寸
     
     switch (state)
     {

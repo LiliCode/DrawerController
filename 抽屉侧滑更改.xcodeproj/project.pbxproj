@@ -16,9 +16,9 @@
 		028C3FBC1CEEFDCB00CA4804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028C3FBA1CEEFDCB00CA4804 /* LaunchScreen.storyboard */; };
 		028C3FC71CEEFDCB00CA4804 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FC61CEEFDCB00CA4804 /* ______Tests.m */; };
 		028C3FD21CEEFDCB00CA4804 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FD11CEEFDCB00CA4804 /* ______UITests.m */; };
-		028C3FE41CEF039A00CA4804 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */; };
-		028C3FE51CEF039A00CA4804 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */; };
 		028C3FE81CEFF33900CA4804 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028C3FE71CEFF33900CA4804 /* MenuTableViewController.m */; };
+		E247962521B7810A00E95106 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E247962221B7810A00E95106 /* ICSDropShadowView.m */; };
+		E247962621B7810A00E95106 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E247962421B7810A00E95106 /* ICSDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +56,13 @@
 		028C3FCD1CEEFDCB00CA4804 /* 抽屉侧滑更改UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "抽屉侧滑更改UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		028C3FD11CEEFDCB00CA4804 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		028C3FD31CEEFDCB00CA4804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		028C3FE01CEF039A00CA4804 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
-		028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
-		028C3FE21CEF039A00CA4804 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
-		028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
 		028C3FE61CEFF33900CA4804 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		028C3FE71CEFF33900CA4804 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		028C3FE91CEFF3CC00CA4804 /* ProjectPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectPCH.pch; sourceTree = "<group>"; };
+		E247962121B7810A00E95106 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
+		E247962221B7810A00E95106 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		E247962321B7810A00E95106 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		E247962421B7810A00E95106 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		028C3FA81CEEFDCB00CA4804 /* 抽屉侧滑更改 */ = {
 			isa = PBXGroup;
 			children = (
-				028C3FDF1CEF025200CA4804 /* Drawer */,
+				E247962021B7810A00E95106 /* Drawer */,
 				028C3FAC1CEEFDCB00CA4804 /* AppDelegate.h */,
 				028C3FAD1CEEFDCB00CA4804 /* AppDelegate.m */,
 				028C3FAF1CEEFDCB00CA4804 /* ViewController.h */,
@@ -157,15 +157,15 @@
 			path = "抽屉侧滑更改UITests";
 			sourceTree = "<group>";
 		};
-		028C3FDF1CEF025200CA4804 /* Drawer */ = {
+		E247962021B7810A00E95106 /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
-				028C3FE01CEF039A00CA4804 /* ICSDrawerController.h */,
-				028C3FE11CEF039A00CA4804 /* ICSDrawerController.m */,
-				028C3FE21CEF039A00CA4804 /* ICSDropShadowView.h */,
-				028C3FE31CEF039A00CA4804 /* ICSDropShadowView.m */,
+				E247962121B7810A00E95106 /* ICSDrawerController.h */,
+				E247962221B7810A00E95106 /* ICSDropShadowView.m */,
+				E247962321B7810A00E95106 /* ICSDropShadowView.h */,
+				E247962421B7810A00E95106 /* ICSDrawerController.m */,
 			);
-			name = Drawer;
+			path = Drawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +304,9 @@
 				028C3FB11CEEFDCB00CA4804 /* ViewController.m in Sources */,
 				028C3FB71CEEFDCB00CA4804 /* ______.xcdatamodeld in Sources */,
 				028C3FAE1CEEFDCB00CA4804 /* AppDelegate.m in Sources */,
-				028C3FE51CEF039A00CA4804 /* ICSDropShadowView.m in Sources */,
-				028C3FE41CEF039A00CA4804 /* ICSDrawerController.m in Sources */,
+				E247962521B7810A00E95106 /* ICSDropShadowView.m in Sources */,
 				028C3FE81CEFF33900CA4804 /* MenuTableViewController.m in Sources */,
+				E247962621B7810A00E95106 /* ICSDrawerController.m in Sources */,
 				028C3FAB1CEEFDCB00CA4804 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +539,7 @@
 				028C3FD81CEEFDCB00CA4804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		028C3FD91CEEFDCB00CA4804 /* Build configuration list for PBXNativeTarget "抽屉侧滑更改Tests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +548,7 @@
 				028C3FDB1CEEFDCB00CA4804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		028C3FDC1CEEFDCB00CA4804 /* Build configuration list for PBXNativeTarget "抽屉侧滑更改UITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +557,7 @@
 				028C3FDE1CEEFDCB00CA4804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
